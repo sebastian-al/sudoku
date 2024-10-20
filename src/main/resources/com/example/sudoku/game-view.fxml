@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.sudoku.controllers.gameController">
+   <children>
+      <GridPane alignment="CENTER" prefHeight="590.0" prefWidth="700.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="470.800048828125" minWidth="10.0" prefWidth="445.20001220703125" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="344.39996337890625" minWidth="10.0" prefWidth="254.79998779296875" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints maxHeight="590.0" minHeight="10.0" prefHeight="590.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="122.40000610351558" minHeight="0.0" prefHeight="0.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="36.80000915527343" minHeight="0.0" prefHeight="0.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <GridPane style="-fx-border-color: black;">
+              <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <GridPane style="-fx-border-color: black;">
+                    <columnConstraints>
+                      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <TextField fx:id="textField1" maxWidth="40.0">
+                           <GridPane.margin>
+                              <Insets left="10.0" />
+                           </GridPane.margin></TextField>
+                        <TextField fx:id="textField2" maxWidth="40.0" GridPane.columnIndex="1">
+                           <GridPane.margin>
+                              <Insets left="10.0" />
+                           </GridPane.margin></TextField>
+                        <TextField fx:id="textField3" maxWidth="40.0" GridPane.columnIndex="2">
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                           <GridPane.margin>
+                              <Insets left="10.0" right="10.0" />
+                           </GridPane.margin>
+                        </TextField>
+                        <TextField fx:id="textField4" maxWidth="40.0" GridPane.rowIndex="1">
+                           <GridPane.margin>
+                              <Insets left="10.0" />
+                           </GridPane.margin></TextField>
+                        <TextField fx:id="textField5" maxWidth="40.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                           <GridPane.margin>
+                              <Insets left="10.0" />
+                           </GridPane.margin></TextField>
+                        <TextField fx:id="textField6" maxWidth="40.0" GridPane.columnIndex="2" GridPane.rowIndex="1">
+                           <GridPane.margin>
+                              <Insets left="10.0" right="5.0" />
+                           </GridPane.margin>
+                        </TextField>
+                     </children>
+                  </GridPane>
+                  <GridPane layoutX="10.0" layoutY="10.0" GridPane.columnIndex="1">
+                     <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                     </columnConstraints>
+                     <rowConstraints>
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                     </rowConstraints>
+                     <children>
+                        <TextField fx:id="textField7" maxWidth="40.0" style="-fx-background-color: violet;">
+                           <GridPane.margin>
+                              <Insets left="10.0" right="10.0" />
+                           </GridPane.margin>
+                        </TextField>
+                        <TextField fx:id="textField8" maxWidth="40.0" style="-fx-background-color: violet;" GridPane.columnIndex="1">
+                           <GridPane.margin>
+                              <Insets left="10.0" />
+                           </GridPane.margin></TextField>
+                        <TextField fx:id="textField9" maxWidth="40.0" style="-fx-background-color: violet;" GridPane.columnIndex="2">
+                           <GridPane.margin>
+                              <Insets left="10.0" right="5.0" />
+                           </GridPane.margin>
+                        </TextField>
+                        <TextField fx:id="textField10" maxWidth="40.0" style="-fx-background-color: violet;" GridPane.rowIndex="1">
+                           <GridPane.margin>
+                              <Insets left="10.0" />
+                           </GridPane.margin>
+                        </TextField>
+                        <TextField fx:id="textField11" maxWidth="40.0" style="-fx-background-color: violet;" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                           <GridPane.margin>
+                              <Insets left="10.0" />
+                           </GridPane.margin></TextField>
+                        <TextField fx:id="textField12" maxWidth="40.0" style="-fx-background-color: violet;" GridPane.columnIndex="2" GridPane.rowIndex="1">
+                           <GridPane.margin>
+                              <Insets left="10.0" right="5.0" />
+                           </GridPane.margin>
+                        </TextField>
+                     </children>
+                  </GridPane>
+                  <GridPane layoutX="308.0" layoutY="10.0" GridPane.rowIndex="1">
+                     <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                     </columnConstraints>
+                     <rowConstraints>
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                     </rowConstraints>
+                     <children>
+                        <TextField fx:id="textField13" maxWidth="40.0" style="-fx-background-color: violet;">
+                           <GridPane.margin>
+                              <Insets left="10.0" />
+                           </GridPane.margin></TextField>
+                        <TextField fx:id="textField14" maxWidth="40.0" style="-fx-background-color: violet;" GridPane.columnIndex="1">
+                           <GridPane.margin>
+                              <Insets left="10.0" right="10.0" />
+                           </GridPane.margin></TextField>
+                        <TextField fx:id="textField15" maxWidth="40.0" style="-fx-background-color: violet;" GridPane.columnIndex="2">
+                           <GridPane.margin>
+                              <Insets left="10.0" right="10.0" />
+                           </GridPane.margin>
+                        </TextField>
+                        <TextField fx:id="textField16" maxWidth="40.0" style="-fx-background-color: violet;" GridPane.rowIndex="1">
+                           <GridPane.margin>
+                              <Insets left="10.0" />
+                           </GridPane.margin></TextField>
+                        <TextField fx:id="textField17" maxWidth="40.0" style="-fx-background-color: violet;" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                           <GridPane.margin>
+                              <Insets left="10.0" />
+                           </GridPane.margin></TextField>
+                        <TextField fx:id="textField18" maxWidth="40.0" style="-fx-background-color: violet;" GridPane.columnIndex="2" GridPane.rowIndex="1">
+                           <GridPane.margin>
+                              <Insets left="10.0" right="5.0" />
+                           </GridPane.margin>
+                        </TextField>
+                     </children>
+                  </GridPane>
+                  <GridPane layoutX="10.0" layoutY="180.0" style="-fx-border-color: black;" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                     <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                     </columnConstraints>
+                     <rowConstraints>
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                     </rowConstraints>
+                     <children>
+                        <TextField fx:id="textField19" maxWidth="40.0">
+                           <GridPane.margin>
+                              <Insets left="10.0" />
+                           </GridPane.margin>
+                        </TextField>
+                        <TextField fx:id="textField20" maxWidth="40.0" GridPane.columnIndex="1">
+                           <GridPane.margin>
+                              <Insets left="10.0" />
+                           </GridPane.margin></TextField>
+                        <TextField fx:id="textField21" maxWidth="40.0" GridPane.columnIndex="2">
+                           <GridPane.margin>
+                              <Insets left="10.0" right="5.0" />
+                           </GridPane.margin>
+                        </TextField>
+                        <TextField fx:id="textField22" maxWidth="40.0" GridPane.rowIndex="1">
+                           <GridPane.margin>
+                              <Insets left="10.0" />
+                           </GridPane.margin>
+                        </TextField>
+                        <TextField fx:id="textField23" maxWidth="40.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                           <GridPane.margin>
+                              <Insets left="10.0" />
+                           </GridPane.margin></TextField>
+                        <TextField fx:id="textField24" maxWidth="40.0" GridPane.columnIndex="2" GridPane.rowIndex="1">
+                           <GridPane.margin>
+                              <Insets left="10.0" right="5.0" />
+                           </GridPane.margin>
+                        </TextField>
+                     </children>
+                  </GridPane>
+                  <GridPane layoutX="308.0" layoutY="180.0" style="-fx-border-color: black;" GridPane.rowIndex="2">
+                     <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                     </columnConstraints>
+                     <rowConstraints>
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                     </rowConstraints>
+                     <children>
+                        <TextField fx:id="textField25" maxWidth="40.0">
+                           <GridPane.margin>
+                              <Insets left="10.0" />
+                           </GridPane.margin></TextField>
+                        <TextField fx:id="textField26" maxWidth="40.0" GridPane.columnIndex="1">
+                           <GridPane.margin>
+                              <Insets left="10.0" />
+                           </GridPane.margin></TextField>
+                        <TextField fx:id="textField27" maxWidth="40.0" GridPane.columnIndex="2">
+                           <GridPane.margin>
+                              <Insets left="10.0" right="5.0" />
+                           </GridPane.margin>
+                        </TextField>
+                        <TextField fx:id="textField28" maxWidth="40.0" GridPane.rowIndex="1">
+                           <GridPane.margin>
+                              <Insets left="10.0" />
+                           </GridPane.margin></TextField>
+                        <TextField fx:id="textField29" maxWidth="40.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                           <GridPane.margin>
+                              <Insets left="10.0" />
+                           </GridPane.margin></TextField>
+                        <TextField fx:id="textField30" maxWidth="40.0" GridPane.columnIndex="2" GridPane.rowIndex="1">
+                           <GridPane.margin>
+                              <Insets left="10.0" right="5.0" />
+                           </GridPane.margin>
+                        </TextField>
+                     </children>
+                  </GridPane>
+                  <GridPane layoutX="10.0" layoutY="351.0" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                     <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                     </columnConstraints>
+                     <rowConstraints>
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                     </rowConstraints>
+                     <children>
+                        <TextField fx:id="textField31" maxWidth="40.0" style="-fx-background-color: violet;">
+                           <GridPane.margin>
+                              <Insets left="10.0" />
+                           </GridPane.margin>
+                        </TextField>
+                        <TextField fx:id="textField32" maxWidth="40.0" style="-fx-background-color: violet;" GridPane.columnIndex="1">
+                           <GridPane.margin>
+                              <Insets left="10.0" />
+                           </GridPane.margin></TextField>
+                        <TextField fx:id="textField33" maxWidth="40.0" style="-fx-background-color: violet;" GridPane.columnIndex="2">
+                           <GridPane.margin>
+                              <Insets left="10.0" right="5.0" />
+                           </GridPane.margin>
+                        </TextField>
+                        <TextField fx:id="textField34" maxWidth="40.0" style="-fx-background-color: violet;" GridPane.rowIndex="1">
+                           <GridPane.margin>
+                              <Insets left="10.0" />
+                           </GridPane.margin>
+                        </TextField>
+                        <TextField fx:id="textField35" maxWidth="40.0" style="-fx-background-color: violet;" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                           <GridPane.margin>
+                              <Insets left="10.0" />
+                           </GridPane.margin></TextField>
+                        <TextField fx:id="textField36" maxWidth="40.0" style="-fx-background-color: violet;" GridPane.columnIndex="2" GridPane.rowIndex="1">
+                           <GridPane.margin>
+                              <Insets left="10.0" right="5.0" />
+                           </GridPane.margin>
+                        </TextField>
+                     </children>
+                  </GridPane>
+               </children>
+            </GridPane>
+            <VBox alignment="TOP_CENTER" prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="1">
+               <children>
+                  <Label contentDisplay="TOP" text="SUDOKU!">
+                     <VBox.margin>
+                        <Insets bottom="50.0" top="20.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font name="Book Antiqua" size="36.0" />
+                     </font>
+                  </Label>
+                  <Label text="Ayudas restantes!" />
+                  <Label fx:id="mostrarAyuda" prefWidth="15.0" style="-fx-border-color: black;" />
+                  <Button contentDisplay="CENTER" mnemonicParsing="false" onAction="#buttonForHelp" text="help!">
+                     <VBox.margin>
+                        <Insets bottom="130.0" />
+                     </VBox.margin>
+                  </Button>
+                  <Label text="Reinicia o empieza un nuevo juego!">
+                     <font>
+                        <Font name="Britannic Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <Button mnemonicParsing="false" onAction="#buttonToStart" text="Start Game!">
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin></Button>
+               </children>
+            </VBox>
+         </children>
+      </GridPane>
+   </children>
+</VBox>
